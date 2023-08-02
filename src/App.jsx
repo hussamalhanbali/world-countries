@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./Pages/Navbar";
+import Navbar from "./pages/Navbar";
 import React, { useState } from "react";
 import Search from "./pages/Search";
 import CountryCard from "./pages/CountryCard";
