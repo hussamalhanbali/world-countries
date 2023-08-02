@@ -10,7 +10,7 @@ const CountryCard = ({ country, isDarkMode }) => {
         margin: "50px",
         width: "220px",
         paddingBottom: "8px",
-        borderRadius: "5px",
+        borderRadius: "5px", 
       }}
     >
       <Link
