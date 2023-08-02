@@ -10,7 +10,7 @@ const Search = () => {
   const [isSelectOpen, setIsSelectOpen] = useState(false);
 
   useEffect(() => {
-    const fetchCountries = async () => {
+    const fetchCountries = async () => { 
       try {
         const response = await axios.get("https://restcountries.com/v2/all");
         const countriesWithFlags = response.data.map((country) => ({

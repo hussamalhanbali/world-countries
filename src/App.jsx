@@ -10,7 +10,7 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleMode = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode(!isDarkMode); 
   };
 
   return (

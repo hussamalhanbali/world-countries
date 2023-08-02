@@ -10,7 +10,7 @@ const Navbar = () => {
     if (isDarkMode) {
       root.classList.add("dark");
     } else {
-      root.classList.remove("dark");
+      root.classList.remove("dark"); 
     }
     root.style.setProperty(
       "--arrow-stroke-color",

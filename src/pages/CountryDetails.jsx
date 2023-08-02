@@ -14,7 +14,7 @@ const CountryDetails = ({ toggleMode }) => {
     const fetchCountryDetails = async () => {
       try {
         const response = await axios.get(
-          `https://restcountries.com/v2/alpha/${countryCode}`
+          `https://restcountries.com/v2/alpha/${countryCode}` 
         );
         setCountry(response.data);
         setError(null);
