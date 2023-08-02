@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --background-primary: #2b3844;
+  --background-secondary: #202c36;
+  --text-color-light: #fff;
+  --text-color-dark: #111517;
+  --arrow-stroke-color-light: #111517;
+  --arrow-stroke-color-dark: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  font-family: "Open Sans";
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.dark body {
+  background-color: var(--background-primary);
+  color: var(--text-color-light);
+  background-color: var(--background-secondary);
+  color: var(--text-color-dark);
+}
+
+.dark .navbar {
+  background-color: var(--background-primary);
+  color: var(--text-color-light);
+}
+.dark .select-value {
+  background-color: var(--background-primary);
+  color: var(--text-color-light);
+}
+.dark .options option {
+  background-color: var(--background-primary);
+  color: var(--text-color-light);
+}
+
+.dark .Search-for input {
+  background-color: var(--background-primary);
+  color: var(--text-color-light);
+}
+.dark .cards {
+  background-color: var(--background-primary);
+}
+.dark .cards p {
+  color: var(--text-color-light);
+}
+.cards {
+  background-color: var(--text-color-light);
+}
+
+.dark .details {
+  color: var(--text-color-light);
+}
+.dark .border {
+  color: var(--text-color-light);
+  background-color: var(--background-primary);
+}
+.border {
+  background-color: var(--text-color-light);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #fff;
+}
+.navbar-middle img {
+  width: 120px;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    width: 250px;
+  }
+  .navbar-middle {
+    display: none;
+  }
+  .navbar-left {
+    font-size: 0.7rem;
+  }
+  .navbar-right {
+    font-size: 0.7rem;
+  }
+
+  .Search-for {
+    flex-direction: column;
+  }
+  .Search-for input {
+    position: absolute;
+    top: 60px;
+  }
+
+  .custom-select {
+    margin-top: 25px;
+  }
+  .Search-input {
+    width: 200px;
+  }
+
+  .cards {
+    position: relative;
+    bottom: 30px;
+  }
+  .details {
+    display: flex;
+  }
+  .country-details {
+    flex-direction: column;
+  }
+
+  .paragarth {
+    position: absolute;
+    padding-top: 270px;
+    width: 400px;
+  }
+  .paragraph {
+    position: absolute;
+    padding-top: 480px;
+    width: 400px;
+  }
+  .borders p {
+    position: absolute;
+    flex-direction: column;
+    padding-right: 665px;
+    padding-top: 1050px;
+  }
+  .bordercountry {
+    padding-left: 30px;
+  }
+}
