@@ -15,6 +15,13 @@ const App = () => {
 
   return (
     <div className="App">
+      <div style={{
+        backgroundColor: "#f8d7da",
+        color: "#721c24",
+        padding: "10px",
+        textAlign: "center",
+        fontWeight: "bold"
+      }}>This project is currently undergoing maintenance to enhance functionality and user experience. Some features may be temporarily unavailable. Thank you for your understanding and patience!</div>
       <Routes>
         <Route path="*" element={<Navbar />} />
       </Routes>
